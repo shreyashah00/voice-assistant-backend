@@ -3,8 +3,10 @@ import cors from 'cors';
 import voiceRoutes from './routes/voice.routes.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 
-const app = express();
+import { configDotenv } from 'dotenv';
 
+const app = express();
+configDotenv();
 // Explicit CORS Configuration
 app.use(
   cors({
