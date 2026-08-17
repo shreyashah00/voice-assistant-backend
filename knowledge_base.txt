@@ -1,0 +1,28 @@
+ACME CORP - EMPLOYEE & SALES POLICY HANDBOOK
+
+1. WORKING HOURS & ATTENDANCE
+- Standard office working hours are Monday to Friday, 9:00 AM to 6:00 PM NPT.
+- Employees are eligible for flexible remote work up to 2 days per week with manager approval.
+- Overtime requires prior written approval from the department lead.
+
+2. LEAVE & TIME OFF POLICY
+- Annual Paid Leave: 18 days per calendar year.
+- Sick Leave: 12 days per calendar year.
+- Maternity Leave: 14 weeks paid leave.
+- Paternity Leave: 2 weeks paid leave.
+- Unplanned leaves must be notified to HR before 10:00 AM on the day of absence.
+
+3. SALES & CLIENT COMMISSION POLICY
+- Base Sales Target: Every sales executive has a monthly target of $10,000 in closed-won deals.
+- Commission Tier 1: 5% commission on all sales up to 100% of target.
+- Commission Tier 2: 8% commission on any revenue achieved beyond 100% of target.
+- Sales Payout Date: Commissions are calculated on the 1st of each month and paid alongside regular salary.
+
+4. REFUND & RETURN POLICY FOR CLIENTS
+- Software subscriptions can be refunded within 14 days of purchase if usage is under 10%.
+- Hardware products have a 30-day return window provided items are unopened and in original packaging.
+- Refund requests must be submitted via email to support@acmecorp.com.
+
+5. CODE OF CONDUCT & CONFIDENTIALITY
+- All company data, client lead lists, and software codebases are strictly confidential.
+- Employees must not disclose proprietary information or engage with direct competitors during employment.

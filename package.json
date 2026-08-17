@@ -1,0 +1,26 @@
+{
+  "name": "voice-to-voice-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "edge-tts": "^1.0.1",
+    "express": "^5.2.1",
+    "google-tts-api": "^2.0.2",
+    "groq-sdk": "^1.5.0",
+    "multer": "^2.2.0",
+    "openai": "^7.4.0",
+    "pdf-parse": "^2.4.5"
+  }
+}
