@@ -8,7 +8,7 @@ const app = express();
 // Explicit CORS Configuration
 app.use(
   cors({
-    origin: ['http://localhost:2000'], // Your Next.js frontend URLs
+    origin: process.env.AllowedOrigins, // Your Next.js frontend URLs
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     exposedHeaders: ['X-User-Transcript', 'X-AI-Transcript'], 
