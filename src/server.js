@@ -6,12 +6,14 @@ import fs from 'fs';
 
 const startServer = async () => {
   try {
-    // Index your PDF or text file on server startup
-    const sampleDocPath = path.resolve('knowledge_base.txt'); // or .pdf
+    const sampleDocPath = path.resolve('knowledge_base.txt');
+    
     if (fs.existsSync(sampleDocPath)) {
       await RAGService.indexDocument(sampleDocPath);
     } else {
-      console.warn(`Warning: Knowledge base file not found at ${sampleDocPath}. Skipping document indexing on startup.`);
+      console.warn(
+        `Warning: Knowledge base file not found at ${sampleDocPath}. Skipping document indexing on startup.`
+      );
     }
 
     app.listen(CONFIG.PORT, () => {

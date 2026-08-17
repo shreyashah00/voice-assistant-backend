@@ -25,14 +25,19 @@ export class VoiceController {
 
       // 3. Text + Context -> Answer
       const aiResponseText = await LLMService.generateBilingualResponse(userTranscript, context);
+      const finalResponseText = aiResponseText?.trim() || 'I am sorry, could you please repeat that?';
 
       // 4. Answer -> Voice Audio
-      const audioBuffer = await TTSService.synthesizeSpeech(aiResponseText);
+      const audioBuffer = await TTSService.synthesizeSpeech(finalResponseText);
+
+      if (!audioBuffer || audioBuffer.length === 0) {
+        throw new Error('TTS Service produced an empty audio buffer.');
+      }
 
       res.setHeader('Content-Type', 'audio/mpeg');
       res.setHeader('Access-Control-Expose-Headers', 'X-User-Transcript, X-AI-Transcript');
       res.setHeader('X-User-Transcript', encodeURIComponent(userTranscript));
-      res.setHeader('X-AI-Transcript', encodeURIComponent(aiResponseText));
+      res.setHeader('X-AI-Transcript', encodeURIComponent(finalResponseText));
 
       return res.status(200).send(audioBuffer);
     } catch (error) {
